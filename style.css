@@ -155,11 +155,25 @@ p {
     line-height: 1.6;
 }
 
-/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
-    .main-section {
+
+    .main-flex {
         flex-direction: column;
-        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .left {
+        align-items: center;
+    }
+
+    .right {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 .hero-buttons i {
@@ -298,4 +312,40 @@ p {
     text-align: center;
     font-size: 32px;
     margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+
+    header .container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
+@media (max-width: 768px) {
+
+    .skills-grid,
+    .cert-grid,
+    .project-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
